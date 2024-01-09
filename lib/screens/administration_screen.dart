@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import '../utilities/color_constant.dart';
 import '../utilities/constant.dart';
-import '../widgets/button/icon_button/primary_icon_button_widget.dart';
+import '../components/button/icon_button/primary_icon_button_widget.dart';
 import '../widgets/dropdown_widget/action_dropdown_widget.dart';
 import '../widgets/dropdown_widget/rows_dropdown_widget.dart';
-import '../widgets/search_bar/white_background_search_bar.dart';
+import '../components/search_bar/white_background_search_bar.dart';
 import '../widgets/table/six_column_table_widget.dart';
 import 'app_drawer.dart';
 

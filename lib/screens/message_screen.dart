@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ouditor_design_system/utilities/color_constant.dart';
 import 'package:ouditor_design_system/widgets/forums/forum_popular_topic_card_widget.dart';
 import 'package:ouditor_design_system/widgets/messaging_plateform_components/message_count_component_widget.dart';
-import 'package:ouditor_design_system/widgets/search_bar/white_background_search_bar.dart';
+import 'package:ouditor_design_system/components/search_bar/white_background_search_bar.dart';
 import '../utilities/constant.dart';
 import '../widgets/appbar_widget.dart';
 import 'app_drawer.dart';

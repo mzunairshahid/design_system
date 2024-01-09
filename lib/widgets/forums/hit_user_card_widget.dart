@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ouditor_design_system/widgets/avatar/medium_avatar_widget.dart';
-import 'package:ouditor_design_system/widgets/button/icon_button/tertiary_icon_button_widget.dart';
+import 'package:ouditor_design_system/components/avatar/medium_avatar_widget.dart';
+import 'package:ouditor_design_system/components/button/icon_button/tertiary_icon_button_widget.dart';
 
 import '../../utilities/constant.dart';
 

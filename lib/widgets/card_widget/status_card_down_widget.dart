@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ouditor_design_system/utilities/color_constant.dart';
 import 'package:ouditor_design_system/utilities/constant.dart';
-import 'package:ouditor_design_system/widgets/label/downward_label.dart';
+import 'package:ouditor_design_system/components/label/downward_label.dart';
 
 class StatusCardDownwardWidget extends StatelessWidget {
   final String cardTitle;

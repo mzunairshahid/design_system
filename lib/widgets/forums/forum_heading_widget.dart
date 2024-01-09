@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../utilities/constant.dart';
-import '../tab_block/tab_line_widget.dart';
+import '../../components/tab_block/tab_line_widget.dart';
 
 class ForumHeadingWidget extends StatelessWidget {
   final String title;

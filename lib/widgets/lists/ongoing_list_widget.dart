@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ouditor_design_system/utilities/constant.dart';
-import 'package:ouditor_design_system/widgets/avatar/stacks_avatar_widget.dart';
+import 'package:ouditor_design_system/components/avatar/stacks_avatar_widget.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
 import '../../utilities/color_constant.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ouditor_design_system/utilities/constant.dart';
-import 'package:ouditor_design_system/widgets/check_lists/check_list_button_widget.dart';
+import 'package:ouditor_design_system/components/check_lists/check_list_button_widget.dart';
 
 class SixColumnTableWidget extends StatelessWidget {
   const SixColumnTableWidget({super.key});

@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:ouditor_design_system/screens/app_drawer.dart';
 import 'package:ouditor_design_system/utilities/color_constant.dart';
 import 'package:ouditor_design_system/utilities/constant.dart';
-import 'package:ouditor_design_system/widgets/button/label_button/detail_label_button_widget.dart';
-import 'package:ouditor_design_system/widgets/button/label_button/pending_label_button_widget.dart';
-import 'package:ouditor_design_system/widgets/button/label_button/success_label_button_widget.dart';
+import 'package:ouditor_design_system/components/button/label_button/detail_label_button_widget.dart';
+import 'package:ouditor_design_system/components/button/label_button/pending_label_button_widget.dart';
+import 'package:ouditor_design_system/components/button/label_button/success_label_button_widget.dart';
 import 'package:ouditor_design_system/widgets/card_widget/average_sale_report_card_widget.dart';
 import 'package:ouditor_design_system/widgets/card_widget/new_customer_card_widget.dart';
 import 'package:ouditor_design_system/widgets/card_widget/sale_report_card_widget.dart';
@@ -12,9 +12,9 @@ import 'package:ouditor_design_system/widgets/card_widget/status_card_down_widge
 import 'package:ouditor_design_system/widgets/card_widget/status_card_upward_widget.dart';
 import 'package:ouditor_design_system/widgets/card_widget/target_sales_card_widget.dart';
 import 'package:ouditor_design_system/widgets/card_widget/transaction_history_card_widget.dart';
-import 'package:ouditor_design_system/widgets/responsive/four_widgets_responsive.dart';
-import 'package:ouditor_design_system/widgets/responsive/three_widgets_responsive.dart';
-import 'package:ouditor_design_system/widgets/responsive/two_widgets_responsive.dart';
+import 'package:ouditor_design_system/responsiveness/four_widgets_responsive.dart';
+import 'package:ouditor_design_system/responsiveness/three_widgets_responsive.dart';
+import 'package:ouditor_design_system/responsiveness/two_widgets_responsive.dart';
 import 'package:ouditor_design_system/widgets/table/transaction_history_table_widget.dart';
 
 class DashboardScreen extends StatelessWidget {

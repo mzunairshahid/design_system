@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:ouditor_design_system/utilities/color_constant.dart';
 import 'package:ouditor_design_system/utilities/constant.dart';
-import 'package:ouditor_design_system/widgets/text_fields/date_picker_text_field_widget.dart';
-import 'package:ouditor_design_system/widgets/text_fields/description_text_field_widget.dart';
-import 'package:ouditor_design_system/widgets/text_fields/dropdown_text_field_widget.dart';
-import 'package:ouditor_design_system/widgets/text_fields/message_send_text_field_widget.dart';
-import 'package:ouditor_design_system/widgets/text_fields/message_text_field_widget.dart';
-import 'package:ouditor_design_system/widgets/text_fields/private_public%20_dropdown_widget.dart';
-import 'package:ouditor_design_system/widgets/text_fields/simple_textfield_widget.dart';
-import 'package:ouditor_design_system/widgets/text_fields/title_text_field_widget.dart';
+import 'package:ouditor_design_system/components/text_fields/date_picker_text_field_widget.dart';
+import 'package:ouditor_design_system/components/text_fields/description_text_field_widget.dart';
+import 'package:ouditor_design_system/components/text_fields/dropdown_text_field_widget.dart';
+import 'package:ouditor_design_system/components/text_fields/message_send_text_field_widget.dart';
+import 'package:ouditor_design_system/components/text_fields/message_text_field_widget.dart';
+import 'package:ouditor_design_system/components/text_fields/private_public%20_dropdown_widget.dart';
+import 'package:ouditor_design_system/components/text_fields/simple_textfield_widget.dart';
+import 'package:ouditor_design_system/components/text_fields/title_text_field_widget.dart';
 
 class TextFieldScreen extends StatefulWidget {
   const TextFieldScreen({super.key});
@@ -18,7 +18,14 @@ class TextFieldScreen extends StatefulWidget {
 }
 
 class _TextFieldScreenState extends State<TextFieldScreen> {
-  final TextEditingController _controller = TextEditingController();
+  final TextEditingController _controllerSimpleTextField =
+      TextEditingController();
+  final TextEditingController _controllerDescription = TextEditingController();
+  final TextEditingController _controllerTitleTextField =
+      TextEditingController();
+  final TextEditingController _controllerMessageTextField =
+      TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,12 +43,12 @@ class _TextFieldScreenState extends State<TextFieldScreen> {
             children: [
               SimpleTextFieldWidget(
                   hintText: 'Input here ',
-                  controller: _controller,
+                  controller: _controllerSimpleTextField,
                   keyboardType: TextInputType.number),
               const SizedBox(height: 20),
               DescriptionTextFieldWidget(
                 hintText: 'Description',
-                controller: _controller,
+                controller: _controllerDescription,
                 keyboardType: TextInputType.multiline,
               ),
               const SizedBox(height: 20),
@@ -60,7 +67,7 @@ class _TextFieldScreenState extends State<TextFieldScreen> {
               const SizedBox(height: 20),
               TitleTextFieldWidget(
                 hintText: 'Ttile',
-                controller: _controller,
+                controller: _controllerTitleTextField,
                 keyboardType: TextInputType.text,
                 usdAmount: '0.00',
               ),
@@ -68,8 +75,8 @@ class _TextFieldScreenState extends State<TextFieldScreen> {
               MessageSendTextfieldWidget(
                   hintText: 'Message wade',
                   onPress: () {},
-                  controller: _controller,
-                  keyboardType: TextInputType.text)
+                  controller: _controllerMessageTextField,
+                  keyboardType: TextInputType.text),
             ],
           ),
         ),

@@ -5,8 +5,8 @@ import 'package:ouditor_design_system/utilities/constant.dart';
 import 'package:ouditor_design_system/widgets/card_widget/sales_figure_card_widget.dart';
 import 'package:ouditor_design_system/widgets/card_widget/status_card_down_widget.dart';
 import 'package:ouditor_design_system/widgets/card_widget/status_card_upward_widget.dart';
-import 'package:ouditor_design_system/widgets/responsive/four_widgets_responsive.dart';
-import 'package:ouditor_design_system/widgets/tab_block/tab_block_widget.dart';
+import 'package:ouditor_design_system/responsiveness/four_widgets_responsive.dart';
+import 'package:ouditor_design_system/components/tab_block/tab_block_widget.dart';
 import 'package:ouditor_design_system/widgets/table/earning_history_table_widget.dart';
 
 class SpreadSheetScreen extends StatelessWidget {

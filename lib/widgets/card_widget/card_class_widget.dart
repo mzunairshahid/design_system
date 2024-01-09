@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ouditor_design_system/widgets/tab_block/tab_block_widget.dart';
+import 'package:ouditor_design_system/components/tab_block/tab_block_widget.dart';
 
 import '../../utilities/constant.dart';
 

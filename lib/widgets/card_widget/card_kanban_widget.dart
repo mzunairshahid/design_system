@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ouditor_design_system/widgets/avatar/stacks_avatar_widget.dart';
-import 'package:ouditor_design_system/widgets/button/label_button/success_label_button_widget.dart';
+import 'package:ouditor_design_system/components/avatar/stacks_avatar_widget.dart';
+import 'package:ouditor_design_system/components/button/label_button/success_label_button_widget.dart';
 
 import '../../utilities/color_constant.dart';
 import '../../utilities/constant.dart';

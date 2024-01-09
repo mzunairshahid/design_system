@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:ouditor_design_system/widgets/card_widget/contact_card_widget.dart';
-import 'package:ouditor_design_system/widgets/responsive/two_widgets_responsive.dart';
-import 'package:ouditor_design_system/widgets/text_fields/description_text_field_widget.dart';
+import 'package:ouditor_design_system/responsiveness/two_widgets_responsive.dart';
+import 'package:ouditor_design_system/components/text_fields/description_text_field_widget.dart';
 import '../utilities/constant.dart';
 import '../widgets/appbar_widget.dart';
-import '../widgets/button/big_button/primary_big_button_widget.dart';
-import '../widgets/text_fields/simple_textfield_widget.dart';
+import '../components/button/big_button/primary_big_button_widget.dart';
+import '../components/text_fields/simple_textfield_widget.dart';
 import 'app_drawer.dart';
 
 class FeedBackScreen extends StatefulWidget {

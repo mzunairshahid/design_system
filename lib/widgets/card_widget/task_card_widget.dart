@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ouditor_design_system/utilities/constant.dart';
-import 'package:ouditor_design_system/widgets/check_lists/green_check_list_widget.dart';
+import 'package:ouditor_design_system/components/check_lists/green_check_list_widget.dart';
 
 class TaskCardWidget extends StatelessWidget {
   final String uppertext;

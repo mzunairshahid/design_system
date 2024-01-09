@@ -21,6 +21,12 @@ class _PrivatePublicDropdownTextfieldWidgetState
   String? selectedValue;
 
   @override
+  void initState() {
+    super.initState();
+    selectedValue = 'Public';
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Container(
       height: 49,

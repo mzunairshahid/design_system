@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:ouditor_design_system/widgets/appbar_widget.dart';
-import 'package:ouditor_design_system/widgets/button/label_button/success_label_button_widget.dart';
+import 'package:ouditor_design_system/components/button/label_button/success_label_button_widget.dart';
 import 'package:ouditor_design_system/widgets/card_widget/cutomer_growth_card_widget.dart';
 import 'package:ouditor_design_system/widgets/card_widget/strategies_card_tile_widget.dart';
 import 'package:ouditor_design_system/widgets/dropdown_widget/action_dropdown_widget.dart';
 import 'package:ouditor_design_system/widgets/forums/forum_heading_widget.dart';
-import 'package:ouditor_design_system/widgets/responsive/two_widgets_responsive.dart';
+import 'package:ouditor_design_system/responsiveness/two_widgets_responsive.dart';
 import 'package:ouditor_design_system/widgets/table/your_transaction_table_card_widget.dart';
 
 import '../utilities/color_constant.dart';
@@ -13,7 +13,7 @@ import '../utilities/constant.dart';
 import '../widgets/card_widget/status_card_down_widget.dart';
 import '../widgets/card_widget/status_card_upward_widget.dart';
 import '../widgets/card_widget/target_sales_card_widget.dart';
-import '../widgets/responsive/four_widgets_responsive.dart';
+import '../responsiveness/four_widgets_responsive.dart';
 import 'app_drawer.dart';
 
 class SaleProductScreen extends StatelessWidget {

@@ -30,11 +30,8 @@ const kExtraSmalSemibold = TextStyle(
     letterSpacing: 0.24,
     // fontFamily: 'Manrope',
     color: kTextHeadingColor1); //correct
-const kExtraSmallBold = TextStyle(
-  fontSize: 12,
-  fontWeight: FontWeight.bold,
-  letterSpacing: 0.24,
-);
+const kExtraSmallBold =
+    TextStyle(fontSize: 12, fontWeight: FontWeight.bold, letterSpacing: 0.24);
 
 const kSmallRegular = TextStyle(
     fontSize: 14,
@@ -154,9 +151,16 @@ const kExtraLargeBold = TextStyle(
     letterSpacing: 0.52,
     color: kTextHeadingColor1);
 
-//  btton text styling with color
+//  btton text styling with color ==============
 
 const kPrimarybuttonRegular = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    letterSpacing: 0.28,
+    color: kPrimaryButtonTextColor,
+    height: 0.11,
+    fontFamily: 'Manrope.ttf');
+const kPrimaryDisablebutton = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.w500,
     letterSpacing: 0.28,

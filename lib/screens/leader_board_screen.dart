@@ -5,7 +5,7 @@ import 'package:ouditor_design_system/utilities/constant.dart';
 import 'package:ouditor_design_system/widgets/card_widget/products_card_widget.dart';
 import 'package:ouditor_design_system/widgets/dropdown_widget/action_dropdown_widget.dart';
 import 'package:ouditor_design_system/widgets/dropdown_widget/rows_dropdown_widget.dart';
-import 'package:ouditor_design_system/widgets/search_bar/white_background_search_bar.dart';
+import 'package:ouditor_design_system/components/search_bar/white_background_search_bar.dart';
 
 class LeaderBordScreen extends StatelessWidget {
   const LeaderBordScreen({super.key});

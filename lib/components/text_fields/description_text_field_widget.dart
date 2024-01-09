@@ -29,24 +29,16 @@ class DescriptionTextFieldWidget extends StatelessWidget {
           borderRadius: BorderRadius.circular(8),
         ),
       ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Expanded(
-              child: TextField(
-            controller: controller,
-            onChanged: onChanged,
-            keyboardType: keyboardType,
-            minLines: 1,
-            maxLines: 5,
-            decoration: InputDecoration(
-                hintText: hintText,
-                hintStyle: kSmallMedium,
-                border: InputBorder.none),
-          )),
-        ],
+      child: TextField(
+        controller: controller,
+        onChanged: onChanged,
+        keyboardType: keyboardType,
+        minLines: 1,
+        maxLines: 5,
+        decoration: InputDecoration(
+            hintText: hintText,
+            hintStyle: kSmallMedium,
+            border: InputBorder.none),
       ),
     );
   }

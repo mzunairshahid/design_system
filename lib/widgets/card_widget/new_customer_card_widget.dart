@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ouditor_design_system/utilities/constant.dart';
-import 'package:ouditor_design_system/widgets/avatar/medium_avatar_widget.dart';
+import 'package:ouditor_design_system/components/avatar/medium_avatar_widget.dart';
 
 class NewCustomerCardwidget extends StatelessWidget {
   final String title;

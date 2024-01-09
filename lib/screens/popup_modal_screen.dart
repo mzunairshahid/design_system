@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ouditor_design_system/utilities/color_constant.dart';
 import 'package:ouditor_design_system/widgets/card_widget/payment_method_card_tile_widget.dart';
-import 'package:ouditor_design_system/widgets/text_fields/number_text_field_widget.dart';
-import 'package:ouditor_design_system/widgets/text_fields/price_text_field_widget.dart';
-import 'package:ouditor_design_system/widgets/text_fields/verfication_code_text_field_widget.dart';
+import 'package:ouditor_design_system/components/text_fields/number_text_field_widget.dart';
+import 'package:ouditor_design_system/components/text_fields/price_text_field_widget.dart';
+import 'package:ouditor_design_system/components/text_fields/verfication_code_text_field_widget.dart';
 
 class PopupAndModalScreen extends StatefulWidget {
   const PopupAndModalScreen({super.key});

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:ouditor_design_system/utilities/color_constant.dart';
-import 'package:ouditor_design_system/widgets/button/text_button_widget.dart';
-import 'package:ouditor_design_system/widgets/label/downward_label.dart';
-import 'package:ouditor_design_system/widgets/label/upward_label.dart';
-import 'package:ouditor_design_system/widgets/search_bar/dark_background_search_bar_widget.dart';
-import 'package:ouditor_design_system/widgets/search_bar/white_background_search_bar.dart';
-import 'package:ouditor_design_system/widgets/tab_block/tab_block_widget.dart';
-import 'package:ouditor_design_system/widgets/tab_block/time_sequence_tab_widget.dart';
+import 'package:ouditor_design_system/components/button/text_button_widget.dart';
+import 'package:ouditor_design_system/components/label/downward_label.dart';
+import 'package:ouditor_design_system/components/label/upward_label.dart';
+import 'package:ouditor_design_system/components/search_bar/dark_background_search_bar_widget.dart';
+import 'package:ouditor_design_system/components/search_bar/white_background_search_bar.dart';
+import 'package:ouditor_design_system/components/tab_block/tab_block_widget.dart';
+import 'package:ouditor_design_system/components/tab_block/time_sequence_tab_widget.dart';
 
 class ComponentScreen extends StatelessWidget {
   const ComponentScreen({super.key});

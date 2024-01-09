@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:ouditor_design_system/components/avatar/small_avatar_widget.dart';
 import 'package:ouditor_design_system/utilities/color_constant.dart';
 import 'package:ouditor_design_system/utilities/constant.dart';
-import 'package:ouditor_design_system/widgets/avatar/big_avatar_widget.dart.dart';
-import 'package:ouditor_design_system/widgets/avatar/icon_avatar_widget.dart';
-import 'package:ouditor_design_system/widgets/avatar/medium_avatar_widget.dart';
+import 'package:ouditor_design_system/components/avatar/big_avatar_widget.dart.dart';
+import 'package:ouditor_design_system/components/avatar/medium_avatar_widget.dart';
+import 'package:ouditor_design_system/utilities/theme_colors.dart';
 
 class CircleAvatarScreen extends StatelessWidget {
   const CircleAvatarScreen({super.key});
@@ -20,36 +21,104 @@ class CircleAvatarScreen extends StatelessWidget {
       ),
       body: const Padding(
         padding: EdgeInsets.symmetric(horizontal: 75, vertical: 60),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+            Text('User Avatar', style: kMediumLargeSemibold),
+            SizedBox(height: 20),
+            Row(
               children: [
-                Text('User Avatar', style: kMediumLargeSemibold),
-                SizedBox(height: 20),
                 BigAvatarWidget(
                   imageUrl: 'lib/asset/images/profle.png',
-                  backgroundColor: Colors.pink,
+                  backgroundColor: kVeryDarkColor,
                 ),
-                SizedBox(height: 20),
-                MediumAvatarWidget(
+                SizedBox(width: 5),
+                BigAvatarWidget(
                   imageUrl: 'lib/asset/images/profle.png',
-                  backgroundColor: Colors.yellow,
+                  backgroundColor: kDarkColor,
                 ),
-                SizedBox(height: 20),
-                IconAvatarWidget(
-                    icon: Icons.autorenew_rounded,
-                    backgroungColour: Color(0xFFF18424),
-                    radiusAvatar: 32,
-                    iconSize: 18),
-                SizedBox(height: 20),
+                SizedBox(width: 5),
+                BigAvatarWidget(
+                  imageUrl: 'lib/asset/images/profle.png',
+                  backgroundColor: kMediumColor,
+                ),
+                SizedBox(width: 5),
+                BigAvatarWidget(
+                  imageUrl: 'lib/asset/images/profle.png',
+                  backgroundColor: kMediumLightColor,
+                ),
+                SizedBox(width: 5),
+                BigAvatarWidget(
+                  imageUrl: 'lib/asset/images/profle.png',
+                  backgroundColor: kLightColor,
+                ),
+                SizedBox(width: 5),
+                BigAvatarWidget(
+                  imageUrl: 'lib/asset/images/profle.png',
+                  backgroundColor: kVeryLightColor,
+                ),
               ],
             ),
-            Column(
+            SizedBox(height: 20),
+            Row(
               children: [
-                Text('Crypto', style: kMediumLargeSemibold),
+                MediumAvatarWidget(
+                  imageUrl: 'lib/asset/images/profle.png',
+                  backgroundColor: kVeryDarkColor,
+                ),
+                SizedBox(width: 5),
+                MediumAvatarWidget(
+                  imageUrl: 'lib/asset/images/profle.png',
+                  backgroundColor: kDarkColor,
+                ),
+                SizedBox(width: 5),
+                MediumAvatarWidget(
+                  imageUrl: 'lib/asset/images/profle.png',
+                  backgroundColor: kMediumColor,
+                ),
+                SizedBox(width: 5),
+                MediumAvatarWidget(
+                  imageUrl: 'lib/asset/images/profle.png',
+                  backgroundColor: kMediumLightColor,
+                ),
+                SizedBox(width: 5),
+                MediumAvatarWidget(
+                  imageUrl: 'lib/asset/images/profle.png',
+                  backgroundColor: kLightColor,
+                ),
+                SizedBox(width: 5),
+                MediumAvatarWidget(
+                  imageUrl: 'lib/asset/images/profle.png',
+                  backgroundColor: kVeryLightColor,
+                ),
+              ],
+            ),
+            SizedBox(height: 20),
+            Row(
+              children: [
+                SmallAvatarWidget(
+                    backgroundColor: kVeryDarkColor,
+                    imageUrl: 'lib/asset/images/profle.png'),
+                SizedBox(width: 7),
+                SmallAvatarWidget(
+                    backgroundColor: kDarkColor,
+                    imageUrl: 'lib/asset/images/profle.png'),
+                SizedBox(width: 7),
+                SmallAvatarWidget(
+                    backgroundColor: kMediumColor,
+                    imageUrl: 'lib/asset/images/profle.png'),
+                SizedBox(width: 7),
+                SmallAvatarWidget(
+                    backgroundColor: kMediumLightColor,
+                    imageUrl: 'lib/asset/images/profle.png'),
+                SizedBox(width: 7),
+                SmallAvatarWidget(
+                    backgroundColor: kLightColor,
+                    imageUrl: 'lib/asset/images/profle.png'),
+                SizedBox(width: 7),
+                SmallAvatarWidget(
+                    backgroundColor: kVeryLightColor,
+                    imageUrl: 'lib/asset/images/profle.png'),
               ],
             )
           ],

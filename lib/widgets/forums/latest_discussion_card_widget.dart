@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ouditor_design_system/utilities/color_constant.dart';
 import 'package:ouditor_design_system/utilities/text_const_color.dart';
-import 'package:ouditor_design_system/widgets/avatar/medium_avatar_widget.dart';
-import 'package:ouditor_design_system/widgets/avatar/small_avatar_widget.dart';
-import 'package:ouditor_design_system/widgets/button/label_button/normal_label_button_widget.dart';
+import 'package:ouditor_design_system/components/avatar/medium_avatar_widget.dart';
+import 'package:ouditor_design_system/components/avatar/small_avatar_widget.dart';
+import 'package:ouditor_design_system/components/button/label_button/normal_label_button_widget.dart';
 
 import '../../utilities/constant.dart';
 

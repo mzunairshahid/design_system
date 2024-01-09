@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ouditor_design_system/screens/administration_screen.dart';
+import 'package:ouditor_design_system/screens/avatar_placeholder_screen.dart';
+import 'package:ouditor_design_system/screens/button_screen.dart';
 import 'package:ouditor_design_system/screens/card_screen.dart';
 import 'package:ouditor_design_system/screens/dashboard_screen.dart';
 import 'package:ouditor_design_system/screens/feedback_screen.dart';
@@ -149,7 +151,7 @@ class AppDrawer extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           DrawerListTile(
-            title: 'Settings',
+            title: 'Text Fields',
             imageURL: 'lib/asset/images/setting_inactive_icon.png',
             tappedImageURL: 'lib/asset/images/setting_active_icon.png',
             onPress: () {
@@ -157,6 +159,30 @@ class AppDrawer extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                       builder: (context) => const TextFieldScreen()));
+            },
+          ),
+          const SizedBox(height: 16),
+          DrawerListTile(
+            title: 'Circle Avatar & placeholder',
+            imageURL: 'lib/asset/images/setting_inactive_icon.png',
+            tappedImageURL: 'lib/asset/images/setting_active_icon.png',
+            onPress: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const CircleAvatarScreen()));
+            },
+          ),
+          const SizedBox(height: 16),
+          DrawerListTile(
+            title: 'Buttons',
+            imageURL: 'lib/asset/images/setting_inactive_icon.png',
+            tappedImageURL: 'lib/asset/images/setting_active_icon.png',
+            onPress: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const ButtonScreen()));
             },
           ),
         ],

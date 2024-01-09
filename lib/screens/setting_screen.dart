@@ -2,18 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:ouditor_design_system/screens/app_drawer.dart';
 import 'package:ouditor_design_system/utilities/color_constant.dart';
 import 'package:ouditor_design_system/widgets/appbar_widget.dart';
-import 'package:ouditor_design_system/widgets/avatar/medium_avatar_widget.dart';
-import 'package:ouditor_design_system/widgets/button/big_button/primary_big_button_widget.dart';
-import 'package:ouditor_design_system/widgets/button/medium_button/secondary_medium_buton_widget.dart';
-import 'package:ouditor_design_system/widgets/button/small_button/secondary_small_buton_widget.dart';
-import 'package:ouditor_design_system/widgets/button/small_button/tertiary_small_buton_widget.dart';
+import 'package:ouditor_design_system/components/avatar/medium_avatar_widget.dart';
+import 'package:ouditor_design_system/components/button/big_button/primary_big_button_widget.dart';
+import 'package:ouditor_design_system/components/button/medium_button/secondary_medium_buton_widget.dart';
+import 'package:ouditor_design_system/components/button/small_button/secondary_small_buton_widget.dart';
+import 'package:ouditor_design_system/components/button/small_button/tertiary_small_buton_widget.dart';
 import 'package:ouditor_design_system/widgets/card_widget/security_card_widget.dart';
 import 'package:ouditor_design_system/widgets/card_widget/setting_card_widget.dart';
-import 'package:ouditor_design_system/widgets/responsive/two_widgets_responsive.dart';
+import 'package:ouditor_design_system/responsiveness/two_widgets_responsive.dart';
 import '../utilities/constant.dart';
-import '../widgets/button/toggle_widget.dart';
-import '../widgets/text_fields/dropdown_text_field_widget.dart';
-import '../widgets/text_fields/simple_textfield_widget.dart';
+import '../components/button/toggle_widget.dart';
+import '../components/text_fields/dropdown_text_field_widget.dart';
+import '../components/text_fields/simple_textfield_widget.dart';
 
 class SettingScreen extends StatefulWidget {
   const SettingScreen({super.key});

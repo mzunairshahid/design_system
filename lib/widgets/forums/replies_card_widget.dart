@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ouditor_design_system/utilities/color_constant.dart';
-import 'package:ouditor_design_system/widgets/avatar/medium_avatar_widget.dart';
-import 'package:ouditor_design_system/widgets/avatar/small_avatar_widget.dart';
+import 'package:ouditor_design_system/components/avatar/medium_avatar_widget.dart';
+import 'package:ouditor_design_system/components/avatar/small_avatar_widget.dart';
 
 import '../../utilities/constant.dart';
 import '../../utilities/text_const_color.dart';

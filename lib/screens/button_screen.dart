@@ -1,28 +1,29 @@
 import 'package:flutter/material.dart';
+import 'package:ouditor_design_system/components/button/big_button/primary_big_button_widget.dart';
 import 'package:ouditor_design_system/utilities/color_constant.dart';
 import 'package:ouditor_design_system/utilities/constant.dart';
-import 'package:ouditor_design_system/widgets/button/big_button/complete_big_button_widget.dart';
-import 'package:ouditor_design_system/widgets/button/big_button/secondary_big_button_widget.dart';
-import 'package:ouditor_design_system/widgets/check_lists/check_list_button_widget.dart';
-import 'package:ouditor_design_system/widgets/button/favorite_button_widget.dart';
-import 'package:ouditor_design_system/widgets/button/icon_button/primary_icon_button_widget.dart';
-import 'package:ouditor_design_system/widgets/button/icon_button/secondary_icon_button_widget.dart';
-import 'package:ouditor_design_system/widgets/button/icon_button/tertiary_icon_button_widget.dart';
-import 'package:ouditor_design_system/widgets/button/medium_button/primary_medium_buton_widget.dart';
-import 'package:ouditor_design_system/widgets/button/medium_button/secondary_medium_buton_widget.dart';
-import 'package:ouditor_design_system/widgets/button/medium_button/tertiary_medium_buton_widget.dart';
-import 'package:ouditor_design_system/widgets/button/radio_button.dart';
-import 'package:ouditor_design_system/widgets/button/small_button/primary_small_buton_widget.dart';
-import 'package:ouditor_design_system/widgets/button/small_button/secondary_small_buton_widget.dart';
-import 'package:ouditor_design_system/widgets/button/small_button/tertiary_small_buton_widget.dart';
-import 'package:ouditor_design_system/widgets/button/social_media_button/copy_link_button_widget.dart';
-import 'package:ouditor_design_system/widgets/button/social_media_button/facebook_share_button_widget.dart';
-import 'package:ouditor_design_system/widgets/button/social_media_button/tweet_share_buton_widget.dart';
-import 'package:ouditor_design_system/widgets/button/text_link_button/medium_normal_underline_widget.dart';
-import 'package:ouditor_design_system/widgets/button/text_link_button/medium_normal_widget.dart';
-import 'package:ouditor_design_system/widgets/button/text_link_button/small_hover_buton.dart';
-import 'package:ouditor_design_system/widgets/button/text_link_button/small_normal_button_widget.dart';
-import 'package:ouditor_design_system/widgets/button/toggle_widget.dart';
+import 'package:ouditor_design_system/components/button/big_button/complete_big_button_widget.dart';
+import 'package:ouditor_design_system/components/button/big_button/secondary_big_button_widget.dart';
+import 'package:ouditor_design_system/components/check_lists/check_list_button_widget.dart';
+import 'package:ouditor_design_system/components/button/favorite_button_widget.dart';
+import 'package:ouditor_design_system/components/button/icon_button/primary_icon_button_widget.dart';
+import 'package:ouditor_design_system/components/button/icon_button/secondary_icon_button_widget.dart';
+import 'package:ouditor_design_system/components/button/icon_button/tertiary_icon_button_widget.dart';
+import 'package:ouditor_design_system/components/button/medium_button/primary_medium_buton_widget.dart';
+import 'package:ouditor_design_system/components/button/medium_button/secondary_medium_buton_widget.dart';
+import 'package:ouditor_design_system/components/button/medium_button/tertiary_medium_buton_widget.dart';
+import 'package:ouditor_design_system/components/button/radio_button.dart';
+import 'package:ouditor_design_system/components/button/small_button/primary_small_buton_widget.dart';
+import 'package:ouditor_design_system/components/button/small_button/secondary_small_buton_widget.dart';
+import 'package:ouditor_design_system/components/button/small_button/tertiary_small_buton_widget.dart';
+import 'package:ouditor_design_system/components/button/social_media_button/copy_link_button_widget.dart';
+import 'package:ouditor_design_system/components/button/social_media_button/facebook_share_button_widget.dart';
+import 'package:ouditor_design_system/components/button/social_media_button/tweet_share_buton_widget.dart';
+import 'package:ouditor_design_system/components/button/text_link_button/medium_normal_underline_widget.dart';
+import 'package:ouditor_design_system/components/button/text_link_button/medium_normal_widget.dart';
+import 'package:ouditor_design_system/components/button/text_link_button/small_hover_buton.dart';
+import 'package:ouditor_design_system/components/button/text_link_button/small_normal_button_widget.dart';
+import 'package:ouditor_design_system/components/button/toggle_widget.dart';
 
 class ButtonScreen extends StatefulWidget {
   const ButtonScreen({Key? key}) : super(key: key);
@@ -79,9 +80,15 @@ class _ButtonScreenState extends State<ButtonScreen> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            // BigPrimaryButtonWidget(
-                            //     label: 'Normal', onPressed: () {}),
-                            // const SizedBox(height: 10),
+                            BigPrimaryButtonWidget(
+                                label: 'Normal', onPressed: () {}),
+                            const SizedBox(height: 10),
+                            BigPrimaryButtonWidget(
+                              label: 'Normal',
+                              onPressed: () {},
+                              isDisabled: true,
+                            ),
+                            const SizedBox(height: 10),
                             // BigPrimaryButtonWidget(
                             //     label: 'Hover', onPressed: () {}),
                             // const SizedBox(height: 10),

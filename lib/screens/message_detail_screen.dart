@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ouditor_design_system/utilities/color_constant.dart';
 
 import 'package:ouditor_design_system/widgets/forums/forum_popular_topic_card_widget.dart';
-import 'package:ouditor_design_system/widgets/text_fields/message_send_text_field_widget.dart';
+import 'package:ouditor_design_system/components/text_fields/message_send_text_field_widget.dart';
 
 class MessageDetailScreen extends StatefulWidget {
   const MessageDetailScreen({super.key});

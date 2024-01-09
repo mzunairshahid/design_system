@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:ouditor_design_system/screens/app_drawer.dart';
 import 'package:ouditor_design_system/utilities/color_constant.dart';
 import 'package:ouditor_design_system/utilities/constant.dart';
-import 'package:ouditor_design_system/widgets/button/label_button/normal_label_button_widget.dart';
-import 'package:ouditor_design_system/widgets/button/label_button/pending_label_button_widget.dart';
-import 'package:ouditor_design_system/widgets/button/label_button/success_label_button_widget.dart';
+import 'package:ouditor_design_system/components/button/label_button/normal_label_button_widget.dart';
+import 'package:ouditor_design_system/components/button/label_button/pending_label_button_widget.dart';
+import 'package:ouditor_design_system/components/button/label_button/success_label_button_widget.dart';
 import 'package:ouditor_design_system/widgets/card_widget/activity_card_widget.dart';
 import 'package:ouditor_design_system/widgets/card_widget/card_class_widget.dart';
 import 'package:ouditor_design_system/widgets/card_widget/card_kanban_widget.dart';
@@ -22,7 +22,7 @@ import 'package:ouditor_design_system/widgets/forums/forum_popular_topic_card_wi
 import 'package:ouditor_design_system/widgets/forums/hit_user_card_widget.dart';
 import 'package:ouditor_design_system/widgets/forums/latest_discussion_card_widget.dart';
 import 'package:ouditor_design_system/widgets/forums/replies_card_widget.dart';
-import 'package:ouditor_design_system/widgets/label/downward_polygon_label_widget.dart';
+import 'package:ouditor_design_system/components/label/downward_polygon_label_widget.dart';
 import 'package:ouditor_design_system/widgets/lists/ongoing_list_widget.dart';
 import 'package:ouditor_design_system/widgets/lists/wide_list_widget.dart';
 import 'package:ouditor_design_system/widgets/lists/wide_project_list_widget.dart';
@@ -32,12 +32,12 @@ import 'package:ouditor_design_system/widgets/messaging_plateform_components/cli
 import 'package:ouditor_design_system/widgets/messaging_plateform_components/dribble_attachment_widget.dart';
 import 'package:ouditor_design_system/widgets/messaging_plateform_components/image_attachment_chat_widget.dart';
 import 'package:ouditor_design_system/widgets/messaging_plateform_components/profile_pop_up_widget.dart';
-import 'package:ouditor_design_system/widgets/responsive/four_widgets_responsive.dart';
-import 'package:ouditor_design_system/widgets/responsive/three_widgets_responsive.dart';
-import 'package:ouditor_design_system/widgets/responsive/two_widgets_responsive.dart';
-import '../widgets/label/upward_polygon_label_widget.dart';
+import 'package:ouditor_design_system/responsiveness/four_widgets_responsive.dart';
+import 'package:ouditor_design_system/responsiveness/three_widgets_responsive.dart';
+import 'package:ouditor_design_system/responsiveness/two_widgets_responsive.dart';
+import '../components/label/upward_polygon_label_widget.dart';
 import '../widgets/messaging_plateform_components/download_msg_file_widget.dart';
-import '../widgets/tab_block/tab_line_widget.dart';
+import '../components/tab_block/tab_line_widget.dart';
 
 class WideListScreen extends StatelessWidget {
   const WideListScreen({super.key});

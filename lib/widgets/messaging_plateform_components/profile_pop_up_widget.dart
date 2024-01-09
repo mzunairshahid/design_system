@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:ouditor_design_system/utilities/constant.dart';
-import 'package:ouditor_design_system/widgets/avatar/big_avatar_widget.dart.dart';
-import 'package:ouditor_design_system/widgets/avatar/medium_avatar_widget.dart';
-import 'package:ouditor_design_system/widgets/button/popup_menu_button_widget.dart';
-import 'package:ouditor_design_system/widgets/button/small_button/small_button_widget.dart';
-import 'package:ouditor_design_system/widgets/tab_block/tab_line_widget.dart';
+import 'package:ouditor_design_system/components/avatar/big_avatar_widget.dart.dart';
+import 'package:ouditor_design_system/components/avatar/medium_avatar_widget.dart';
+import 'package:ouditor_design_system/components/button/popup_menu_button_widget.dart';
+import 'package:ouditor_design_system/components/button/small_button/small_button_widget.dart';
+import 'package:ouditor_design_system/components/tab_block/tab_line_widget.dart';
 
 import '../../utilities/color_constant.dart';
 
