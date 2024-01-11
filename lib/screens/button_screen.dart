@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ouditor_design_system/components/button/big_button/primary_big_button_widget.dart';
-import 'package:ouditor_design_system/utilities/color_constant.dart';
+import 'package:ouditor_design_system/components/button/big_button/tertiary_big_button_widget.dart';
 import 'package:ouditor_design_system/utilities/constant.dart';
-import 'package:ouditor_design_system/components/button/big_button/complete_big_button_widget.dart';
 import 'package:ouditor_design_system/components/button/big_button/secondary_big_button_widget.dart';
 import 'package:ouditor_design_system/components/check_lists/check_list_button_widget.dart';
 import 'package:ouditor_design_system/components/button/favorite_button_widget.dart';
@@ -84,27 +83,16 @@ class _ButtonScreenState extends State<ButtonScreen> {
                                 label: 'Normal', onPressed: () {}),
                             const SizedBox(height: 10),
                             BigPrimaryButtonWidget(
-                              label: 'Normal',
+                                label: 'Hover', onPressed: () {}),
+                            const SizedBox(height: 10),
+                            BigPrimaryButtonWidget(
+                                label: 'Click', onPressed: () {}),
+                            const SizedBox(height: 10),
+                            BigPrimaryButtonWidget(
+                              label: 'Disable',
                               onPressed: () {},
                               isDisabled: true,
                             ),
-                            const SizedBox(height: 10),
-                            // BigPrimaryButtonWidget(
-                            //     label: 'Hover', onPressed: () {}),
-                            // const SizedBox(height: 10),
-                            // BigPrimaryButtonWidget(
-                            //     label: 'Click', onPressed: () {}),
-                            // const SizedBox(height: 10),
-                            BigButtonWidget(
-                              label: 'Disable',
-                              onPressed: () {},
-                              normalColor: kPrimaryNormalButonColor,
-                              hoverColor: kPrimaryHoverButtonColor,
-                              clickColor: kPrimaryClickButtonColor,
-                              disableColor: kPrimaryDisableButtonColor,
-                              borderColor: kTertiaryDisableBorderColor,
-                              isDisabled: true,
-                            )
                           ],
                         ),
                         const SizedBox(width: 45),
@@ -120,28 +108,31 @@ class _ButtonScreenState extends State<ButtonScreen> {
                             BigSecondaryButtonWidget(
                                 label: 'Click', onPressed: () {}),
                             const SizedBox(height: 10),
-                            // BigButtonWidget(
-                            //     label: 'Disable',
-                            //     onPressed: () {},
-                            //     borderColor: kDisabledButtonColor,
-                            //     disableColor: kDisabledButtonColor,
-                            //     isDisabled: true)
+                            BigSecondaryButtonWidget(
+                              label: 'Disable',
+                              onPressed: () {},
+                              isDisabled: true,
+                            ),
                           ],
                         ),
                         const SizedBox(width: 45),
-                        const Column(
+                        Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            // CompleteBigButtonidget(
-                            //   label: 'Normal',
-                            //   onPressed: () {},
-                            //   normalColor: kSecondaryNormalButtonColor,
-                            //   hoverColor: kSecondaryClickButtonColor,
-                            //   clickColor: kSecondaryClickButtonColor,
-                            //   borderColor: kTertiaryBorderColor,
-                            //   isDisabled: false,
-                            // ),
-                            SizedBox(height: 10),
+                            BigTertiaryButtonWidget(
+                                label: 'Normal', onPressed: () {}),
+                            const SizedBox(height: 10),
+                            BigTertiaryButtonWidget(
+                                label: 'Hover', onPressed: () {}),
+                            const SizedBox(height: 10),
+                            BigTertiaryButtonWidget(
+                                label: 'Click', onPressed: () {}),
+                            const SizedBox(height: 10),
+                            BigTertiaryButtonWidget(
+                                label: 'Disable',
+                                onPressed: () {},
+                                isDisabled: true),
+                            const SizedBox(height: 10),
                             // CompleteBigButtonidget(
                             //   label: 'Hover',
                             //   onPressed: () {},
@@ -151,7 +142,7 @@ class _ButtonScreenState extends State<ButtonScreen> {
                             //   borderColor: kTertiaryBorderColor,
                             //   isDisabled: false,
                             // ),
-                            SizedBox(height: 10),
+
                             // CompleteBigButtonidget(
                             //   label: 'Click',
                             //   onPressed: () {},
@@ -161,7 +152,7 @@ class _ButtonScreenState extends State<ButtonScreen> {
                             //   borderColor: kTertiaryBorderColor,
                             //   isDisabled: false,
                             // ),
-                            SizedBox(height: 10),
+                            // SizedBox(height: 10),
                             // CompleteBigButtonidget(
                             //     label: 'Disable',
                             //     onPressed: () {},
@@ -188,12 +179,19 @@ class _ButtonScreenState extends State<ButtonScreen> {
                             //     clickColor: kPrimaryClickButtonColor,
                             //     borderColor: kPrimaryNormalButonColor,
                             //     isDisabled: false),
+                            MediumPrimaryButtonWidget(
+                                label: 'Normal', onPressed: () {}),
                             const SizedBox(height: 10),
                             MediumPrimaryButtonWidget(
                                 label: 'Hover', onPressed: () {}),
                             const SizedBox(height: 10),
                             MediumPrimaryButtonWidget(
                                 label: 'Click', onPressed: () {}),
+                            const SizedBox(height: 10),
+                            MediumPrimaryButtonWidget(
+                                label: 'Disable',
+                                onPressed: () {},
+                                isDisabled: true),
                           ],
                         ),
                         const SizedBox(width: 45),
@@ -208,6 +206,11 @@ class _ButtonScreenState extends State<ButtonScreen> {
                             const SizedBox(height: 10),
                             MediumSecondaryButtonWidget(
                                 label: 'Click', onPressed: () {}),
+                            const SizedBox(height: 10),
+                            MediumSecondaryButtonWidget(
+                                label: 'Disable',
+                                onPressed: () {},
+                                isDisabled: true),
                           ],
                         ),
                         const SizedBox(width: 45),
@@ -222,6 +225,11 @@ class _ButtonScreenState extends State<ButtonScreen> {
                             const SizedBox(height: 10),
                             MediumTertiaryButtonWidget(
                                 label: 'Click', onPressed: () {}),
+                            const SizedBox(height: 10),
+                            MediumTertiaryButtonWidget(
+                                label: 'Disable',
+                                onPressed: () {},
+                                isDisabled: true),
                           ],
                         ),
                       ],
@@ -234,21 +242,20 @@ class _ButtonScreenState extends State<ButtonScreen> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            // SmallCompleteButtonWidget(
-                            //   label: 'Normal',
-                            //   onPressed: () {},
-                            //   normalColor: kPrimaryNormalButonColor,
-                            //   hoverColor: kPrimaryHoverButtonColor,
-                            //   clickColor: kPrimaryClickButtonColor,
-                            //   borderColor: kPrimaryNormalButonColor,
-                            //   isDisabled: false,
-                            // ),
+                            SmallPrimaryButtonWidget(
+                                label: 'Normal', onPressed: () {}),
                             const SizedBox(height: 10),
                             SmallPrimaryButtonWidget(
                                 label: 'Hover', onPressed: () {}),
                             const SizedBox(height: 10),
                             SmallPrimaryButtonWidget(
                                 label: 'Click', onPressed: () {}),
+                            const SizedBox(height: 10),
+                            SmallPrimaryButtonWidget(
+                              label: 'Disable',
+                              onPressed: () {},
+                              isDisabled: true,
+                            ),
                           ],
                         ),
                         const SizedBox(width: 45),
@@ -263,6 +270,11 @@ class _ButtonScreenState extends State<ButtonScreen> {
                             const SizedBox(height: 10),
                             SmallSecondaryButtonWidget(
                                 label: 'Click', onPressed: () {}),
+                            const SizedBox(height: 10),
+                            SmallSecondaryButtonWidget(
+                                label: 'Disable',
+                                onPressed: () {},
+                                isDisabled: true),
                           ],
                         ),
                         const SizedBox(width: 45),
@@ -277,6 +289,11 @@ class _ButtonScreenState extends State<ButtonScreen> {
                             const SizedBox(height: 10),
                             SmallTertiaryButtonWidget(
                                 label: 'Click', onPressed: () {}),
+                            const SizedBox(height: 10),
+                            SmallTertiaryButtonWidget(
+                                label: 'Disable',
+                                onPressed: () {},
+                                isDisabled: true),
                           ],
                         ),
                       ],
@@ -330,13 +347,26 @@ class _ButtonScreenState extends State<ButtonScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             PrimaryIconButtonWidget(
-                                label: 'Normal', onPressed: () {}),
+                                label: 'Normal',
+                                imageUrl: 'lib/asset/images/chat_white.png',
+                                onPressed: () {}),
                             const SizedBox(height: 10),
                             PrimaryIconButtonWidget(
-                                label: 'Hover', onPressed: () {}),
+                                label: 'Hover',
+                                imageUrl: 'lib/asset/images/chat_white.png',
+                                onPressed: () {}),
                             const SizedBox(height: 10),
                             PrimaryIconButtonWidget(
-                                label: 'Click', onPressed: () {}),
+                                label: 'Click',
+                                imageUrl: 'lib/asset/images/chat_white.png',
+                                onPressed: () {}),
+                            const SizedBox(height: 10),
+                            PrimaryIconButtonWidget(
+                              label: 'Disable',
+                              imageUrl: 'lib/asset/images/chat_white.png',
+                              onPressed: () {},
+                              isDisabled: true,
+                            ),
                           ],
                         ),
                         const SizedBox(width: 45),
@@ -344,13 +374,26 @@ class _ButtonScreenState extends State<ButtonScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             SecondaryIconButtonWidget(
-                                label: 'Normal', onPressed: () {}),
+                                label: 'Normal',
+                                imageUrl: 'lib/asset/images/chat_white.png',
+                                onPressed: () {}),
                             const SizedBox(height: 10),
                             SecondaryIconButtonWidget(
-                                label: 'Normal', onPressed: () {}),
+                                label: 'Hover',
+                                imageUrl: 'lib/asset/images/chat_white.png',
+                                onPressed: () {}),
                             const SizedBox(height: 10),
                             SecondaryIconButtonWidget(
-                                label: 'Normal', onPressed: () {}),
+                                label: 'Click',
+                                imageUrl: 'lib/asset/images/chat_white.png',
+                                onPressed: () {}),
+                            const SizedBox(height: 10),
+                            SecondaryIconButtonWidget(
+                              label: 'Disable',
+                              imageUrl: 'lib/asset/images/chat_white.png',
+                              onPressed: () {},
+                              isDisabled: true,
+                            ),
                           ],
                         ),
                         const SizedBox(width: 45),

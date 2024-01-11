@@ -4,13 +4,18 @@ import 'package:ouditor_design_system/utilities/constant.dart';
 
 class SmallPrimaryButtonWidget extends StatefulWidget {
   final String label;
-  final VoidCallback onPressed;
+  final Function onPressed;
+  final bool isDisabled; // New property to handle button state
 
-  const SmallPrimaryButtonWidget(
-      {super.key, required this.label, required this.onPressed});
+  const SmallPrimaryButtonWidget({
+    Key? key,
+    required this.label,
+    required this.onPressed,
+    this.isDisabled = false, // Default is not disabled
+  }) : super(key: key);
 
   @override
-  _SmallPrimaryButtonWidgetState createState() =>
+  State<SmallPrimaryButtonWidget> createState() =>
       _SmallPrimaryButtonWidgetState();
 }
 
@@ -20,38 +25,48 @@ class _SmallPrimaryButtonWidgetState extends State<SmallPrimaryButtonWidget> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTapDown: (details) {
-        setState(() {
-          _buttonColor = kPrimaryClickButtonColor; // Click Color
-        });
+      onTap: widget.isDisabled ? null : () => widget.onPressed(),
+      onTapDown: (_) {
+        if (!widget.isDisabled) {
+          setState(() {
+            _buttonColor = kPrimaryClickButtonColor; // Click Color
+          });
+        }
       },
-      onTapUp: (details) {
+      onTapUp: (_) {
         setState(() {
           _buttonColor = kPrimaryNormalButonColor; // Normal Color
         });
-        widget.onPressed();
+      },
+      onTapCancel: () {
+        setState(() {
+          _buttonColor = kPrimaryNormalButonColor; // Normal Color
+        });
       },
       child: MouseRegion(
         onEnter: (_) {
-          setState(() {
-            _buttonColor = kPrimaryHoverButtonColor; // Hover Color
-          });
+          if (!widget.isDisabled) {
+            setState(() {
+              _buttonColor = kPrimaryHoverButtonColor; // Hover Color
+            });
+          }
         },
         child: Container(
           height: 33,
-          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 15),
           decoration: BoxDecoration(
-            color: _buttonColor,
+            color: widget.isDisabled
+                ? kDisabledButtonColor // Use disabled button color
+                : _buttonColor,
             borderRadius: BorderRadius.circular(8),
           ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                widget.label,
-                style: kPrimarybuttonRegular,
-              ),
-            ],
+          child: Center(
+            child: Text(
+              widget.label,
+              style: widget.isDisabled
+                  ? kPrimaryDisablebutton // Adjust disabled text color
+                  : kPrimarybuttonRegular,
+            ),
           ),
         ),
       ),

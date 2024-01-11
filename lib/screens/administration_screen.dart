@@ -55,7 +55,9 @@ class AdministrationScreen extends StatelessWidget {
                 children: [
                   const ActionDropdownWidget(),
                   PrimaryIconButtonWidget(
-                      label: 'New Product', onPressed: () {}),
+                      label: 'New Product',
+                      imageUrl: 'lib/asset/images/chat_white.png',
+                      onPressed: () {}),
                 ],
               ),
               const SizedBox(

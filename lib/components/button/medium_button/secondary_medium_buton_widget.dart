@@ -4,10 +4,14 @@ import 'package:ouditor_design_system/utilities/constant.dart';
 
 class MediumSecondaryButtonWidget extends StatefulWidget {
   final String label;
-  final VoidCallback onPressed;
-
-  const MediumSecondaryButtonWidget(
-      {super.key, required this.label, required this.onPressed});
+  final Function onPressed;
+  final bool isDisabled;
+  const MediumSecondaryButtonWidget({
+    super.key,
+    required this.label,
+    required this.onPressed,
+    this.isDisabled = false,
+  });
 
   @override
   State<MediumSecondaryButtonWidget> createState() =>
@@ -21,10 +25,13 @@ class _MediumSecondaryButtonWidgetState
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      onTap: widget.isDisabled ? null : () => widget.onPressed(),
       onTapDown: (_) {
-        setState(() {
-          _buttonColor = kSecondaryClickButtonColor; // Click Color
-        });
+        if (!widget.isDisabled) {
+          setState(() {
+            _buttonColor = kSecondaryClickButtonColor; // Click Color
+          });
+        }
       },
       onTapUp: (_) {
         setState(() {
@@ -34,15 +41,19 @@ class _MediumSecondaryButtonWidgetState
       },
       child: MouseRegion(
         onEnter: (_) {
-          setState(() {
-            _buttonColor = kSecondaryHoverButtonColor; // Hover Color
-          });
+          if (!widget.isDisabled) {
+            setState(() {
+              _buttonColor = kSecondaryHoverButtonColor; // Hover Color
+            });
+          }
         },
         child: Container(
           height: 45,
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 15),
           decoration: BoxDecoration(
-            color: _buttonColor,
+            color: widget.isDisabled
+                ? kDisabledButtonColor // Use disabled button color
+                : _buttonColor,
             borderRadius: BorderRadius.circular(8),
           ),
           child: Column(
@@ -50,7 +61,9 @@ class _MediumSecondaryButtonWidgetState
             children: [
               Text(
                 widget.label,
-                style: kSecondaryButtonRegular,
+                style: widget.isDisabled
+                    ? kPrimaryDisablebutton // Adjust disabled text color
+                    : kSecondaryButtonRegular,
               ),
             ],
           ),

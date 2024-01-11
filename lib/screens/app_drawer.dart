@@ -10,6 +10,7 @@ import 'package:ouditor_design_system/screens/sale_product_screen.dart';
 import 'package:ouditor_design_system/screens/setting_screen.dart';
 import 'package:ouditor_design_system/screens/spread_sheet_screen.dart';
 import 'package:ouditor_design_system/screens/text_field_screen.dart';
+import 'package:ouditor_design_system/screens/text_style.dart';
 import 'package:ouditor_design_system/screens/wide_list_screen.dart';
 import 'package:ouditor_design_system/utilities/color_constant.dart';
 import 'package:ouditor_design_system/utilities/constant.dart';
@@ -183,6 +184,18 @@ class AppDrawer extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                       builder: (context) => const ButtonScreen()));
+            },
+          ),
+          const SizedBox(height: 16),
+          DrawerListTile(
+            title: 'Text Style',
+            imageURL: 'lib/asset/images/setting_inactive_icon.png',
+            tappedImageURL: 'lib/asset/images/setting_active_icon.png',
+            onPress: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const TextStyleScreen()));
             },
           ),
         ],

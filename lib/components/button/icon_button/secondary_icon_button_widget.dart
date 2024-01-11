@@ -4,10 +4,16 @@ import 'package:ouditor_design_system/utilities/constant.dart';
 
 class SecondaryIconButtonWidget extends StatefulWidget {
   final String label;
+  final String imageUrl;
   final Function onPressed;
-
-  const SecondaryIconButtonWidget(
-      {super.key, required this.label, required this.onPressed});
+  final bool isDisabled;
+  const SecondaryIconButtonWidget({
+    super.key,
+    required this.label,
+    required this.imageUrl,
+    required this.onPressed,
+    this.isDisabled = false,
+  });
 
   @override
   State<SecondaryIconButtonWidget> createState() =>
@@ -20,28 +26,39 @@ class _SecondaryIconButtonWidgetState extends State<SecondaryIconButtonWidget> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      onTap: widget.isDisabled ? null : () => widget.onPressed(),
       onTapDown: (_) {
-        setState(() {
-          _buttonColor = kSecondaryClickButtonColor; // Click Color
-        });
+        if (!widget.isDisabled) {
+          setState(() {
+            _buttonColor = kSecondaryClickButtonColor; // Click Color
+          });
+        }
       },
       onTapUp: (_) {
         setState(() {
           _buttonColor = kSecondaryNormalButtonColor; // Normal Color
         });
-        widget.onPressed();
+      },
+      onTapCancel: () {
+        setState(() {
+          _buttonColor = kSecondaryNormalButtonColor; // Normal Color
+        });
       },
       child: MouseRegion(
         onEnter: (_) {
-          setState(() {
-            _buttonColor = kSecondaryHoverButtonColor; // Hover Color
-          });
+          if (!widget.isDisabled) {
+            setState(() {
+              _buttonColor = kSecondaryHoverButtonColor; // Hover Color
+            });
+          }
         },
         child: Container(
           height: 33,
           padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
           decoration: BoxDecoration(
-            color: _buttonColor,
+            color: widget.isDisabled
+                ? kDisabledButtonColor // Use disabled button color
+                : _buttonColor,
             borderRadius: BorderRadius.circular(8),
           ),
           child: Row(
@@ -53,13 +70,10 @@ class _SecondaryIconButtonWidgetState extends State<SecondaryIconButtonWidget> {
                 width: 13.33,
                 height: 13.33,
                 decoration: BoxDecoration(
-                  color: _buttonColor,
-                  image: const DecorationImage(
+                  image: DecorationImage(
                     image: AssetImage(
-                      'lib/asset/images/chat_white.png',
+                      widget.imageUrl,
                     ),
-                    colorFilter: ColorFilter.mode(
-                        kPrimaryNormalButonColor, BlendMode.modulate),
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -72,7 +86,9 @@ class _SecondaryIconButtonWidgetState extends State<SecondaryIconButtonWidget> {
                 children: [
                   Text(
                     widget.label,
-                    style: kSecondaryButtonRegular,
+                    style: widget.isDisabled
+                        ? kPrimaryDisablebutton // Adjust disabled text color
+                        : kSecondaryButtonRegular,
                   ),
                 ],
               ),
